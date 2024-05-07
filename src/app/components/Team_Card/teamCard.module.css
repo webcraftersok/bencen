@@ -1,0 +1,99 @@
+/* Team Card */
+.teamCard {
+  height: 464px;
+  width: 288px;
+  border-radius: 16px;
+}
+
+.group {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  position: relative;
+}
+
+.cardText {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 96px;
+  position: relative;
+  width: 272px;
+}
+
+.position {
+  align-self: stretch;
+  color: var(--gray-dark-color);
+  font-family: var(--bold-font-family);
+  font-size: var(--bold-font-size);
+  font-style: var(--bold-font-style);
+  font-weight: var(--bold-font-weight);
+  letter-spacing: var(--bold-letter-spacing);
+  line-height: var(--bold-line-height);
+  margin-top: -1px;
+  position: relative;
+}
+
+.name {
+  align-self: stretch;
+  color: var(--black-color);
+  font-family: var(--h-2-font-family);
+  font-size: var(--h-2-font-size);
+  font-style: var(--h-2-font-style);
+  font-weight: var(--h-2-font-weight);
+  letter-spacing: var(--h-2-letter-spacing);
+  line-height: var(--h-2-line-height);
+  position: relative;
+}
+
+.description {
+  align-self: stretch;
+  color: var(--gray-dark-color);
+  font-family: var(--text-font-family);
+  font-size: var(--text-font-size); 
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+  letter-spacing: var(--text-letter-spacing);
+  line-height: var(--text-line-height);
+  position: relative;
+}
+
+.icon {
+  width: 208px;
+  text-align: left;
+  display: flex;
+  gap: 40px
+}
+
+/* Team Cards */
+.text{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 928px;
+  margin: 0 auto;
+}
+
+.text h1 {
+  font-size: var(--h-1-font-size);
+  font-style: var(--h-1-font-style);
+  font-weight: var(--h-1-font-weight);
+  margin-bottom: 32px;
+}
+
+.text p {
+  color: var(--gray-dark-color);
+  font-size: var(--text-font-size);
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+}
+
+.teamCards {
+  margin-top: 26px;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}

@@ -1,0 +1,20 @@
+.text {
+    gap: 16px;
+}
+
+.text h1 {
+    color: var(--white-color);
+    font-size: var(--h-1-font-size);
+    font-style: var(--h-1-font-style);
+    font-weight: var(--h-1-font-weight);
+    padding: 12px 0px;
+    margin-top: -0.75px;
+}
+
+.text p {
+    color: var(--gray-light-color);
+    font-size: var(--text-font-size);
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    line-height: var(--text-line-height);
+}

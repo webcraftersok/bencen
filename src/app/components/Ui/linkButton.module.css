@@ -1,0 +1,20 @@
+.button {
+    all: unset;
+    background-color: var(--first-color);
+  }
+  
+  .button .text {
+    color: #ffffff;
+    font-family: var(--bold-font-family);
+    font-size: var(--bold-font-size);
+    font-style: var(--bold-font-style);
+    font-weight: var(--bold-font-weight);
+    text-align: center;
+    letter-spacing: var(--bold-letter-spacing);
+    line-height: var(--bold-line-height);
+    white-space: nowrap;
+  }
+  
+  .button:hover {
+    background-color: var(--logo-color);
+  }

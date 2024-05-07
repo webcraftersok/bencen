@@ -1,0 +1,81 @@
+/* .cardsContainer {
+  display: flex;
+  gap: 32px;
+} */
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  height: 464px;
+  width: 288px;
+  border-radius: 16px;
+  border: solid 1px #cccccc;
+  align-items: center;
+  text-align: center;
+}
+
+.cardContainer div:first-child {
+  height: 192px;
+  background-color: #509ee3;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.cardContainer div:last-child {
+  width: 100%;
+}
+
+.cardContainer button {
+  width: 192px;
+  height: 39px;
+  background-color: #f99005;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.cardContainer p {
+  color: var(--gray-dark-color);
+}
+
+.sliderContainer button + div {
+  height: 466px;
+}
+
+.sliderContainer button + div div ~ div {
+  margin: 0 10px;
+}
+
+.sliderContainer button::before {
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .sliderContainer {
+    display: block;
+    max-width: 310px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    height: 299px;
+  }
+
+  .sliderContainer div:first-child {
+    width: 300px;
+  }
+
+  .sliderContainer button::before {
+    color: grey;
+  }
+  .sliderContainer button + div div ~ div {
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .sliderContainer div:first-child {
+    min-width: 250px;
+  }
+}

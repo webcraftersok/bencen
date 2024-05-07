@@ -1,0 +1,76 @@
+.unmatchedCard {
+  box-shadow: 0px 1.5px 22.5px 0.75px #00000040;
+  height: 240px;
+  width: 288px;
+}
+
+.unmatchedCard .overlapGroup {
+  height: 240px;
+  position: relative;
+}
+
+.unmatchedCard .subtract {
+  top: 32px;
+  left: 0;
+  position: absolute;
+}
+
+.unmatchedCard .image {
+  background-position: 50% 50%;
+  background-size: cover;
+  top: -215px;
+  left: 32px;
+  position: absolute;
+}
+
+.unmatchedCard .text {
+  width: 252px;
+  height: 107px;
+  top: 99px;
+  left: 24px;
+  position: absolute;
+}
+
+.unmatchedCard .header {
+  color: var(--white-color);
+  font-family: var(--h-4-font-family);
+  font-size: var(--h-4-font-size);
+  font-style: var(--h-4-font-style);
+  font-weight: var(--h-4-font-weight);
+  height: 19px;
+  left: 0;
+  top: 0;
+  letter-spacing: var(--h-4-letter-spacing);
+  line-height: var(--h-4-line-height);
+  position: absolute;
+  white-space: nowrap;
+}
+
+.unmatchedCard .content {
+  color: var(--gray-light-color);
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  width: 248px;
+  height: 72px;
+  left: 0;
+  top: 35px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+}
+
+.unmatchedCards {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+@media (max-width: 1217px) {
+  .unmatchedCards {
+    width: 80%;
+    justify-content: center;
+  }
+}

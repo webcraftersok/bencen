@@ -1,0 +1,83 @@
+/* Team Cards */
+.section {
+  background-color: black;
+  padding-bottom: 2rem;
+  padding-top: 360px;
+}
+
+.text{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  letter-spacing: var(--text-letter-spacing);
+  line-height: var(--text-line-height);
+  gap: 0px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 32px;
+}
+
+
+.text h1 {
+  font-size: var(--h-1-font-size);
+  font-style: var(--h-1-font-style);
+  font-weight: var(--h-1-font-weight);
+  margin-bottom: 32px;
+  padding: 0 16px;
+  text-align: center;
+  line-height: 1.2;
+  color: white;
+}
+  
+.text p {
+  color: var(--gray-dark-color);
+  font-size: var(--text-font-size);
+  font-style: var(--text-font-style);
+  font-weight: var(--text-font-weight);
+  padding: 0 16px;
+  color: var(--gray-light-color);
+}
+
+.text .column {
+  flex: 230px;
+}
+
+  
+/* Optional: Adjust spacing between columns */
+.text .column + .column {
+  margin-left: 16px;
+}
+
+@media (max-width: 906px) {
+  .section {
+    padding-top: 840px;
+  }
+}
+
+@media (max-width: 700px) {
+  .image {
+    display: none;
+  }
+}
+
+@media (max-width: 475px) {
+  .text .column + .column {
+    margin-left: 0;
+  }
+
+  .divBullets {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 306px) {
+  .section {
+    padding-top: 960px;
+  }
+}

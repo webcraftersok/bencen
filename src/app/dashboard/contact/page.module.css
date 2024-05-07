@@ -1,0 +1,41 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondSection {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto 12px;
+}
+
+.tab {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 840px;
+  z-index: 2;
+  background-color: white;
+  padding-top: 16px;
+  margin-top: 100px;
+}
+
+@media (max-width: 1100px) {
+  .tab {
+    height: 800px;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  .tab {
+    height: 768px;
+  }
+}
+
+@media (max-width: 350px) {
+  .tab {
+    height: 736px;
+  }
+}

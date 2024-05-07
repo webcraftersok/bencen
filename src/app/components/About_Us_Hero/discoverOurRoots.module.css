@@ -1,0 +1,40 @@
+.text {
+    width: 368px;
+    height: 566px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0px;
+    position: relative;
+    gap: 16px;
+  }
+
+  .text h1 {
+    color: var(--white-color);
+    font-size: var(--h-1-font-size);
+    font-style: var(--h-1-font-style);
+    font-weight: var(--h-1-font-weight);
+    line-height: var(--text-line-height);
+    margin-top: -0.75px;
+  }
+  
+  .text p {
+    color: var(--gray-light-color);
+    font-size: var(--text-font-size);
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    line-height: var(--text-line-height);
+    margin: 0px;
+  }
+
+  @media (max-width: 400px) {
+    .text {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 305px) {
+    .text {
+      width: 260px;
+    }
+  }

@@ -1,0 +1,58 @@
+/* Team Cards */
+.text{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  .text h1 {
+    font-size: var(--h-1-font-size);
+    font-style: var(--h-1-font-style);
+    font-weight: var(--h-1-font-weight);
+    margin-bottom: 32px;
+    padding: 0 16px;
+    text-align: center;
+  }
+  
+  .text p {
+    color: var(--gray-dark-color);
+    font-size: var(--text-font-size);
+    font-style: var(--text-font-style);
+    font-weight: var(--text-font-weight);
+    padding: 0 16px;
+  }
+
+.customer .group{
+  text-align: center;
+}
+
+/* Customers */
+.customers {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 16px;
+  }
+
+.customers li {
+    flex: 0 0 calc(10%);
+}
+
+@media (max-width: 822px) {
+    .customers li {
+      flex: 0 0 calc(25%);
+    }
+}
+
+@media (max-width: 768px) {
+    .customers li {
+      flex: 0 0 calc(30%);
+      
+    }
+}

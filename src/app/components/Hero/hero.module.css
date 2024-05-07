@@ -1,0 +1,26 @@
+.heroContainer {
+  height: 100vh;
+  max-height: 960px;
+  z-index: -2;
+}
+
+.imageContainer {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.image {
+  background-size: cover;
+  background-position-x: center;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: 100;
+  bottom: 0;
+  right: 0;
+}

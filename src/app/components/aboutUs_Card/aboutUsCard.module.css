@@ -1,0 +1,37 @@
+.container {
+  height: 280px;
+  width: 376px;
+  background-image: url("/images/backgrounds/home/2-1.png");
+  /* margin-top: -95px; */
+  background-size: cover;
+}
+
+/* .container div:first-child {
+  position: relative;
+  z-index: -1;
+  left: 32px;
+  bottom: 29px;
+  background-image: url(/images/imageBehind.png);
+  height: 280px;
+  width: 376px;
+} */
+
+@media (max-width: 940px) {
+  .container {
+    width: 300px;
+    margin-top: -105px;
+  }
+
+  /* .container div:first-child {
+    right: 42px;
+    left: 0;
+    background-size: contain;
+    width: 300px;
+  } */
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-top: -125px;
+  }
+}

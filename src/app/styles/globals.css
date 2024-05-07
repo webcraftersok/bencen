@@ -1,0 +1,257 @@
+@import "./font.css";
+@import "normalize.css";
+
+.body {
+  font-family: "Roboto", sans-serif;
+  /* overflow-x: hidden; */
+}
+
+:root {
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --black-color: rgba(0, 0, 0, 1);
+  /* --bold-font-family: "Roboto-Bold", Helvetica; */
+  --bold-font-size: 16px;
+  --bold-font-style: normal;
+  --bold-font-weight: 700;
+  /* --bold-italic-font-family: "Roboto-BoldItalic", Helvetica; */
+  --bold-italic-font-size: 16px;
+  --bold-italic-font-style: italic;
+  --bold-italic-font-weight: 700;
+  --bold-italic-letter-spacing: 0px;
+  --bold-italic-line-height: normal;
+  --bold-letter-spacing: 0px;
+  --bold-line-height: normal;
+  /* --bold-underline-font-family: "Roboto-Bold", Helvetica; */
+  --bold-underline-font-size: 16px;
+  --bold-underline-font-style: normal;
+  --bold-underline-font-weight: 700;
+  --bold-underline-letter-spacing: 0px;
+  --bold-underline-line-height: normal;
+  --contact-card-inner-shadow: inset 0px 0px 22px 5px rgba(255, 140, 66, 0.25);
+  --drop-shadow-landing-about-us-image: 0px 2px 85px 4px rgba(0, 0, 0, 0.4);
+  --drop-shadow-landing-background-logo: 0px 2px 30px 0px rgba(0, 0, 0, 0.25);
+  --drop-shadow-logo-color: 0px 20px 60px 5px rgba(255, 140, 66, 0.45);
+  --drop-shadow-logo-color-2: 0px 4px 70px 6px rgba(255, 140, 66, 0.55);
+  --drop-shadow-logo-color-news: 0px 4px 90px 16px rgba(255, 140, 66, 0.7);
+  --drop-shadow-service-card: 0px 2px 30px 1px rgba(0, 0, 0, 0.25);
+  --drop-shadow-service-card-hover: 0px 6px 80px 0px rgba(0, 0, 0, 0.25);
+  --first-alpha-color: rgba(249, 144, 5, 0.75);
+  --first-alpha-secondary-color: rgba(249, 144, 5, 0.6);
+  --first-color: rgba(249, 144, 5, 1);
+  --gray-color: rgba(204, 204, 204, 1);
+  --gray-dark-color: rgba(102, 102, 102, 1);
+  --gray-light-color: rgba(243, 243, 243, 1);
+  /* --h-1-font-family: "Roboto-ExtraBold", Helvetica; */
+  --h-1-font-size: 36px;
+  --h-1-font-style: normal;
+  --h-1-font-weight: 800;
+  --h-1-letter-spacing: 0px;
+  --h-1-line-height: normal;
+  /* --h-2-font-family: "Roboto-Bold", Helvetica; */
+  --h-2-font-size: 24px;
+  --h-2-font-style: normal;
+  --h-2-font-weight: 700;
+  --h-2-letter-spacing: 0px;
+  --h-2-line-height: normal;
+  /* --h-3-font-family: "Roboto", Helvetica; */
+  --h-3-font-size: 18px;
+  --h-3-font-style: normal;
+  --h-3-font-weight: 700;
+  --h-3-letter-spacing: 0px;
+  --h-3-line-height: normal;
+  /* --h-4-font-family: "Roboto-Bold", Helvetica; */
+  --h-4-font-size: 16px;
+  --h-4-font-style: normal;
+  --h-4-font-weight: 700;
+  --h-4-letter-spacing: 0px;
+  --h-4-line-height: normal;
+  /* --h-5-font-family: "Roboto-Bold", Helvetica; */
+  --h-5-font-size: 13px;
+  --h-5-font-style: normal;
+  --h-5-font-weight: 700;
+  --h-5-letter-spacing: 0px;
+  --h-5-line-height: normal;
+  /* --h-6-font-family: "Roboto-Bold", Helvetica; */
+  --h-6-font-size: 11px;
+  --h-6-font-style: normal;
+  --h-6-font-weight: 700;
+  --h-6-letter-spacing: 0px;
+  --h-6-line-height: normal;
+  /* --h1-italic-font-family: "Roboto-BoldItalic", Helvetica; */
+  --h1-italic-font-size: 36px;
+  --h1-italic-font-style: italic;
+  --h1-italic-font-weight: 700;
+  --h1-italic-letter-spacing: 0px;
+  --h1-italic-line-height: normal;
+  /* --h2-italic-font-family: "Roboto-BoldItalic", Helvetica; */
+  --h2-italic-font-size: 24px;
+  --h2-italic-font-style: italic;
+  --h2-italic-font-weight: 700;
+  --h2-italic-letter-spacing: 0px;
+  --h2-italic-line-height: normal;
+  /* --h3-italic-font-family: "Roboto-BoldItalic", Helvetica; */
+  --h3-italic-font-size: 18px;
+  --h3-italic-font-style: italic;
+  --h3-italic-font-weight: 700;
+  --h3-italic-letter-spacing: 0px;
+  --h3-italic-line-height: normal;
+  /* --h4-italic-font-family: "Roboto-BoldItalic", Helvetica; */
+  --h4-italic-font-size: 16px;
+  --h4-italic-font-style: italic;
+  --h4-italic-font-weight: 700;
+  --h4-italic-letter-spacing: 0px;
+  --h4-italic-line-height: normal;
+  /* --h5-italic-font-family: "Roboto-BoldItalic", Helvetica; */
+  --h5-italic-font-size: 13px;
+  --h5-italic-font-style: italic;
+  --h5-italic-font-weight: 700;
+  --h5-italic-letter-spacing: 0px;
+  --h5-italic-line-height: normal;
+  /* --h6-italic-font-family: "Roboto-BoldItalic", Helvetica; */
+  --h6-italic-font-size: 11px;
+  --h6-italic-font-style: italic;
+  --h6-italic-font-weight: 700;
+  --h6-italic-letter-spacing: 0px;
+  --h6-italic-line-height: normal;
+  /* --italic-font-family: "Roboto-Italic", Helvetica; */
+  --italic-font-size: 16px;
+  --italic-font-style: italic;
+  --italic-font-weight: 400;
+  --italic-letter-spacing: 0px;
+  --italic-line-height: 24px;
+  /* --italic-underline-font-family: "Roboto-Italic", Helvetica; */
+  --italic-underline-font-size: 16px;
+  --italic-underline-font-style: italic;
+  --italic-underline-font-weight: 400;
+  --italic-underline-letter-spacing: 0px;
+  --italic-underline-line-height: normal;
+  --link-color: rgba(80, 158, 227, 1);
+  --logo-color: rgba(249, 119, 28, 1);
+  --logo-color-dark: rgba(255, 140, 66, 1);
+  /* --normal-small-font-family: "Roboto-Regular", Helvetica; */
+  --normal-small-font-size: 14px;
+  --normal-small-font-style: normal;
+  --normal-small-font-weight: 400;
+  --normal-small-letter-spacing: 0px;
+  --normal-small-line-height: 24px;
+  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --second-color: rgba(20, 25, 45, 1);
+  /* --small-text-bold-font-family: "Roboto-Bold", Helvetica; */
+  --small-text-bold-font-size: 11px;
+  --small-text-bold-font-style: normal;
+  --small-text-bold-font-weight: 700;
+  /* --small-text-bold-italic-font-family: "Roboto-BoldItalic", Helvetica; */
+  --small-text-bold-italic-font-size: 11px;
+  --small-text-bold-italic-font-style: italic;
+  --small-text-bold-italic-font-weight: 700;
+  --small-text-bold-italic-letter-spacing: 0px;
+  --small-text-bold-italic-line-height: normal;
+  --small-text-bold-letter-spacing: 0px;
+  --small-text-bold-line-height: normal;
+  /* --small-text-font-family: "Roboto-Regular", Helvetica; */
+  --small-text-font-size: 11px;
+  --small-text-font-style: normal;
+  --small-text-font-weight: 400;
+  /* --small-text-italic-font-family: "Roboto-Italic", Helvetica; */
+  --small-text-italic-font-size: 11px;
+  --small-text-italic-font-style: italic;
+  --small-text-italic-font-weight: 400;
+  --small-text-italic-letter-spacing: 0px;
+  --small-text-italic-line-height: normal;
+  --small-text-letter-spacing: 0px;
+  --small-text-line-height: normal;
+  --text-color: rgba(34, 34, 34, 1);
+  /* --text-font-family: "Roboto-Regular", Helvetica; */
+  --text-font-size: 16px;
+  --text-font-style: normal;
+  --text-font-weight: 400;
+  --text-letter-spacing: 0px;
+  --text-line-height: 24px;
+  /* --text-small-small-normal-font-family: "Roboto-Regular", Helvetica; */
+  --text-small-small-normal-font-size: 12px;
+  --text-small-small-normal-font-style: normal;
+  --text-small-small-normal-font-weight: 400;
+  --text-small-small-normal-letter-spacing: 0px;
+  --text-small-small-normal-line-height: 18px;
+  --title-color: rgba(51, 51, 51, 1);
+  /* --underline-font-family: "Roboto-Regular", Helvetica; */
+  --underline-font-size: 16px;
+  --underline-font-style: normal;
+  --underline-font-weight: 400;
+  --underline-letter-spacing: 0px;
+  --underline-line-height: normal;
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --white-color: rgba(255, 255, 255, 1);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Fonts */
+
+.font-10 {
+  font-size: 10px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+.font-14 {
+  font-size: 14px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-w-500 {
+  font-weight: 500;
+}
+
+/* Paddings */
+
+.padding-10 {
+  padding: 10px;
+}
+
+.padding-20 {
+  padding: 20px;
+}
+
+.padding-l-20 {
+  padding-left: 20px;
+}
+
+.padding-r-20 {
+  padding-right: 20px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Header */
+
+.headerContainer {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  top: 0;
+}
+
+.headerContainer svg g {
+  fill: white;
+}
+
+/* Ajuste de Arrow sliders en diferentes vistas*/
+
+.slick-prev:before, .slick-next:before {
+  font-size: 40px !important;
+}
+
+.serviceCardSliderContainer .slick-prev:before, .serviceCardSliderContainer .slick-next:before, .newsContainerSliderContainer .slick-prev:before, .newsContainerSliderContainer .slick-next:before {
+  font-size: 20px !important;
+}

@@ -1,0 +1,17 @@
+.fillColor{
+    fill: var(--second-alpha-color);
+}
+
+.fillColor:hover {
+    fill: var(--logo-color);
+    cursor: pointer;
+}
+
+.fillColorVariant{
+    fill: var(--second-alpha-color);
+}
+
+.fillColorVariant:hover {
+    fill: var(--link-color);
+    cursor: pointer;
+}

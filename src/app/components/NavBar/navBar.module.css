@@ -1,0 +1,112 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.navBar li {
+  list-style-type: none;
+  position: relative;
+}
+
+.navBar__link {
+  color: var(--second-alpha-color);
+  font-size: 16px;
+}
+
+.navBar__link:hover {
+  color: var(--logo-color);
+}
+
+.active {
+  border-bottom: 1px solid var(--logo-color);
+  color: var(--logo-color);
+}
+
+.active svg {
+  fill: var(--logo-color);
+}
+
+.navBar__pipes {
+  position: absolute;
+  right: -12px;
+}
+
+.languageIconContainer {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .navBar__home {
+    display: none;
+  }
+}
+
+@media (max-width: 475px) {
+  .navBar {
+    gap: 10px;
+  }
+
+  .navBar__pipes {
+    right: -6px;
+  }
+
+  .navBar__link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 585px) {
+  .navBarFooter {
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0px;
+    gap: 1rem;
+  }
+
+  .navBarFooter .navBar__link {
+    font-size: 1rem;
+  }
+
+  .navBar__linkWithPipes {
+    font-size: 10px;
+  }
+
+  .navBar__pipes {
+    font-size: 12px;
+    top: 3px;
+    right: -7px;
+  }
+}
+
+@media (max-width: 360px) {
+  .navBar__linkWithPipes {
+    font-size: 8px;
+  }
+  .navBar__pipes {
+    font-size: 10px;
+    top: 5px;
+  }
+}
+
+@media (max-width: 295px) {
+  .navBar__linkWithPipes {
+    font-size: 7px;
+  }
+}
+
+/* NavBar en HEADER */
+
+@media (max-width: 880px) {
+  .navBarHeader {
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0px;
+    gap: 0.5rem;
+  }
+
+  .navBarHeader .navBar__link {
+    font-size: 1rem;
+  }
+}
