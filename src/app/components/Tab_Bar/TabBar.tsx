@@ -93,7 +93,7 @@ const TabBar = (): JSX.Element => {
           },
           body: JSON.stringify({
             from: emailL,
-            to: "jefatura.rrhh@bencen.com.ar", // Real Email: jefatura.rrhh@bencen.com.ar / Test Email: webcraftersok@gmail.com
+            to: "webcraftersok@gmail.com", // Real Email: jefatura.rrhh@bencen.com.ar / Test email:
             subject: "New message from your website",
             text: `Hello Analía, you have a message from Bencen website,\n\nName: ${nameL}\nPhone Number: ${phoneNumberL}\nMessage: \n${message}`,
           }),
@@ -134,7 +134,7 @@ const TabBar = (): JSX.Element => {
           },
           body: JSON.stringify({
             from: emailR,
-            to: "jefatura.rrhh@bencen.com.ar", // Real Email: jefatura.rrhh@bencen.com.ar / Test Email: webcraftersok@gmail.com
+            to: "webcraftersok@gmail.com", // Real Email: jefatura.rrhh@bencen.com.ar / Test Email: webcraftersok@gmail.com
             subject: `CV - ${nameR} - ${workArea}`,
             text: `Hello Analía, you have a new CV attached from Bencen website,\n\nName: ${nameR}\nPhone Number: ${phoneNumberR}\nWork Area: ${workArea}`,
             attachments: [
@@ -387,15 +387,13 @@ const TabBar = (): JSX.Element => {
           <>
             <div className={classes.tabLeft}>
               <div
-                className={`${classes.boxLeftClick} ${
-                  clickL ? "" : classes.boxLeft
-                }`}
+                className={`${classes.boxLeftClick} ${clickL ? "" : classes.boxLeft
+                  }`}
                 onClick={handleClickL}
               >
                 <div
-                  className={`${classes.headerLeftClick} ${
-                    clickL ? "" : classes.headerLeft
-                  }`}
+                  className={`${classes.headerLeftClick} ${clickL ? "" : classes.headerLeft
+                    }`}
                 >
                   {TAB_BAR[language][0]}
                 </div>
@@ -413,15 +411,13 @@ const TabBar = (): JSX.Element => {
             </div>
             <div className={classes.tabRight}>
               <div
-                className={`${classes.boxRight} ${
-                  clickR ? classes.boxRightClick : ""
-                }`}
+                className={`${classes.boxRight} ${clickR ? classes.boxRightClick : ""
+                  }`}
                 onClick={handleClickR}
               >
                 <div
-                  className={`${classes.headerRight} ${
-                    clickR ? classes.headerRightClick : ""
-                  }`}
+                  className={`${classes.headerRight} ${clickR ? classes.headerRightClick : ""
+                    }`}
                 >
                   {TAB_BAR[language][8]}
                 </div>
@@ -443,29 +439,25 @@ const TabBar = (): JSX.Element => {
             <div>
               <div className={classes.responsiveTab}>
                 <div
-                  className={`${classes.boxLeftClick} ${
-                    clickL ? "" : classes.boxLeft
-                  }`}
+                  className={`${classes.boxLeftClick} ${clickL ? "" : classes.boxLeft
+                    }`}
                   onClick={handleClickL}
                 >
                   <div
-                    className={`${classes.headerLeftClick} ${
-                      clickL ? "" : classes.headerLeft
-                    }`}
+                    className={`${classes.headerLeftClick} ${clickL ? "" : classes.headerLeft
+                      }`}
                   >
                     {TAB_BAR[language][0]}
                   </div>
                 </div>
                 <div
-                  className={`${classes.boxRight} ${
-                    clickR ? classes.boxRightClick : ""
-                  }`}
+                  className={`${classes.boxRight} ${clickR ? classes.boxRightClick : ""
+                    }`}
                   onClick={handleClickR}
                 >
                   <div
-                    className={`${classes.headerRight} ${
-                      clickR ? classes.headerRightClick : ""
-                    }`}
+                    className={`${classes.headerRight} ${clickR ? classes.headerRightClick : ""
+                      }`}
                   >
                     {TAB_BAR[language][8]}
                   </div>
