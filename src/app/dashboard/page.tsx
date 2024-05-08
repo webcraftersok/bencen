@@ -28,6 +28,7 @@ import { store } from "@/app/context/context";
 import Link from "next/link";
 import Maintenance from "../components/Maintenance/Maintenance";
 import FirstSection from "../components/FirstSection/FirstSection";
+import FadeInComponent from "../components/FadeInComponent/FadeInComponent";
 
 const HomePage = () => {
   const [pantallaMediana, setPantallaMediana] = useState(false);
@@ -38,7 +39,6 @@ const HomePage = () => {
   const [otherImages, setOtherImages] = useState({ width: 1200, heigth: 960 });
   const context = useContext(store);
   const { language, setLanguage }: any = context;
-
 
   const handleResize = () => {
     setPantallaMediana(window.innerWidth < 768);
@@ -73,18 +73,20 @@ const HomePage = () => {
         <div className={classes.sectionsContainer}>
           <FirstSection
             firstChild={
-              <>
+              <FadeInComponent>
                 <div>
                   <h1>{HOME_TEXT[language][0]}</h1>
                   <p>{HOME_TEXT[language][1]}</p>
                   <p>{HOME_TEXT[language][2]}</p>
                 </div>
-              </>
+              </FadeInComponent>
             }
             folderName={"home"}
             secondChild={
               <div>
-                <ServiceCards />
+                <FadeInComponent>
+                  <ServiceCards />
+                </FadeInComponent>
               </div>
             }
           />
@@ -94,19 +96,27 @@ const HomePage = () => {
           >
             <div className={`${classes.imageContainer} ${classes.secondImage}`}>
               <div className={classes.containerAbsolute}>
-                <div className={classes.aboutCardContainer}>
-                  <AboutUsCard />
-                  <div className={`${classes.aboutUsParagraphContainer} ${language === 'spanish' ? classes.aboutUsParagraphContainerInSpanish : ''}`}>
-                    <h1>{ABOUT_US[language][0]}</h1>
-                    <p>{ABOUT_US[language][1]}</p>
-                    <p>{ABOUT_US[language][2]}</p>
-                    <Button
-                      href={"/dashboard/aboutUs"}
-                      text={ABOUT_US_BUTTON[language]}
-                      classNameContent="padding-20"
-                    />
+                <FadeInComponent>
+                  <div className={classes.aboutCardContainer}>
+                    <AboutUsCard />
+                    <div
+                      className={`${classes.aboutUsParagraphContainer} ${
+                        language === "spanish"
+                          ? classes.aboutUsParagraphContainerInSpanish
+                          : ""
+                      }`}
+                    >
+                      <h1>{ABOUT_US[language][0]}</h1>
+                      <p>{ABOUT_US[language][1]}</p>
+                      <p>{ABOUT_US[language][2]}</p>
+                      <Button
+                        href={"/dashboard/aboutUs"}
+                        text={ABOUT_US_BUTTON[language]}
+                        classNameContent="padding-20"
+                      />
+                    </div>
                   </div>
-                </div>
+                </FadeInComponent>
               </div>
               <div className={classes.show}>
                 <Image
@@ -121,24 +131,36 @@ const HomePage = () => {
           </section>
           <section className={`${classes.threeSectionContainer}`}>
             <div
-              className={`${classes.imageContainer} ${classes.otherImage} ${classes.paddingBottom
-                } ${pantallaMediana && classes.widthOutMarginTop} ${pantallaMediana && classes.widthOutMarginTop
-                }`}
+              className={`${classes.imageContainer} ${classes.otherImage} ${
+                classes.paddingBottom
+              } ${pantallaMediana && classes.widthOutMarginTop} ${
+                pantallaMediana && classes.widthOutMarginTop
+              }`}
             >
-              <div className={`${classes.containerAbsolute} ${language === 'spanish' ? classes.threeSectionContainerInSpanish : ''}`}>
-                <div className={classes.unmatchedServicesContainer}>
-                  <div className={classes.unmatchedServicesParagraphContainer}>
-                    <h1>{UNMATCHED_SERVICES_TITLE[language][0]}</h1>
-                    <p>{UNMATCHED_SERVICES_TITLE[language][1]}</p>
-                    <LinkButton
-                      href="/brochure/Folleto_Bencen.pdf"
-                      text={UNMATCHED_SERVICES_BUTTON[language]}
-                      classNameContent="padding-10"
-                      download='Folleto_Bencen.pdf'
-                    />
+              <div
+                className={`${classes.containerAbsolute} ${
+                  language === "spanish"
+                    ? classes.threeSectionContainerInSpanish
+                    : ""
+                }`}
+              >
+                <FadeInComponent>
+                  <div className={classes.unmatchedServicesContainer}>
+                    <div
+                      className={classes.unmatchedServicesParagraphContainer}
+                    >
+                      <h1>{UNMATCHED_SERVICES_TITLE[language][0]}</h1>
+                      <p>{UNMATCHED_SERVICES_TITLE[language][1]}</p>
+                      <LinkButton
+                        href="/brochure/Folleto_Bencen.pdf"
+                        text={UNMATCHED_SERVICES_BUTTON[language]}
+                        classNameContent="padding-10"
+                        download="Folleto_Bencen.pdf"
+                      />
+                    </div>
+                    <UnmatchedCards />
                   </div>
-                  <UnmatchedCards />
-                </div>
+                </FadeInComponent>
               </div>
               <div className={classes.show}>
                 <Image
@@ -157,19 +179,21 @@ const HomePage = () => {
           >
             <div className={`${classes.imageContainer} ${classes.otherImage}`}>
               <div className={classes.containerAbsolute}>
-                <div className={classes.clientCardContainer}>
-                  <ClientCard />
-                  <div className={classes.clientParagraphContainer}>
-                    <h1>{PROJECTS[language][0]}</h1>
-                    <p>{PROJECTS[language][1]}</p>
-                    <p>{PROJECTS[language][2]}</p>
-                    <Button
-                      href={"/dashboard/projects"}
-                      text={PROJECTS_BUTTON[language]}
-                      classNameContent="padding-20"
-                    />
+                <FadeInComponent>
+                  <div className={classes.clientCardContainer}>
+                    <ClientCard />
+                    <div className={classes.clientParagraphContainer}>
+                      <h1>{PROJECTS[language][0]}</h1>
+                      <p>{PROJECTS[language][1]}</p>
+                      <p>{PROJECTS[language][2]}</p>
+                      <Button
+                        href={"/dashboard/projects"}
+                        text={PROJECTS_BUTTON[language]}
+                        classNameContent="padding-20"
+                      />
+                    </div>
                   </div>
-                </div>
+                </FadeInComponent>
               </div>
               <div className={classes.show}>
                 <Image
@@ -185,23 +209,20 @@ const HomePage = () => {
           <section className={classes.fiveSectionContainer}>
             <div className={`${classes.imageContainer} ${classes.otherImage}`}>
               <div className={classes.containerAbsolute}>
-                <div className={classes.contactContainer}>
-                  <h1>{CONTACT[language][0]}</h1>
-                  <p>{CONTACT[language][1]}</p>
-                  <p>{CONTACT[language][2]}</p>
-                  <div className={classes.buttonContactContainer}>
-                    <Button
-                      href={"/dashboard/contact"}
-                      text={CONTACT_BUTTON[language][0]}
-                      classNameContent="padding-10"
-                    />
-                    {/* <Button
-                      href={""}
-                      text={CONTACT_BUTTON[language][1]}
-                      classNameContent="padding-10"
-                    /> */}
+                <FadeInComponent>
+                  <div className={classes.contactContainer}>
+                    <h1>{CONTACT[language][0]}</h1>
+                    <p>{CONTACT[language][1]}</p>
+                    <p>{CONTACT[language][2]}</p>
+                    <div className={classes.buttonContactContainer}>
+                      <Button
+                        href={"/dashboard/contact"}
+                        text={CONTACT_BUTTON[language][0]}
+                        classNameContent="padding-10"
+                      />
+                    </div>
                   </div>
-                </div>
+                </FadeInComponent>
               </div>
               <div className={classes.show}>
                 <Image

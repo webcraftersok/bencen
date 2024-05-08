@@ -6,6 +6,7 @@ import ServiceImageWithTextItem from "./ServiceImageWithTextItem";
 import { useContext } from "react";
 import { store } from "@/app/context/context";
 import { languageRendering } from "@/app/utils";
+import FadeInComponent from "../FadeInComponent/FadeInComponent";
 
 const servicesInfo = SERVICES_SECTION;
 
@@ -59,17 +60,21 @@ const ServiceImageWithTextContainer = () => {
             buttonText,
           } = card;
           return (
-            <ServiceImageWithTextItem
-              key={new Date().getTime() + index}
-              id={id}
-              alignTo={alignTo}
-              imageSrc={imageSrc}
-              imageAlt={imageAlt}
-              h2Text={h2Text}
-              paragraphText={paragraphText}
-              last={last}
-              buttonText={buttonText}
-            />
+            <div key={new Date().getTime() + index}>
+              <FadeInComponent>
+                <ServiceImageWithTextItem
+                  key={new Date().getTime() + index}
+                  id={id}
+                  alignTo={alignTo}
+                  imageSrc={imageSrc}
+                  imageAlt={imageAlt}
+                  h2Text={h2Text}
+                  paragraphText={paragraphText}
+                  last={last}
+                  buttonText={buttonText}
+                />
+              </FadeInComponent>
+            </div>
           );
         })}
       </div>

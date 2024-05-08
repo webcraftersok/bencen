@@ -7,6 +7,7 @@ import TabBar from "../../components/Tab_Bar/TabBar";
 import classes from "./page.module.css";
 // import Image from "next/image";
 import FirstSection from "@/app/components/FirstSection/FirstSection";
+import FadeInComponent from "@/app/components/FadeInComponent/FadeInComponent";
 
 const Contact = () => {
   return (
@@ -18,7 +19,9 @@ const Contact = () => {
       />
       <div className={classes.secondSection}>
         <section className={classes.tab}>
-          <TabBar />
+          <FadeInComponent>
+            <TabBar />
+          </FadeInComponent>
         </section>
       </div>
     </div>

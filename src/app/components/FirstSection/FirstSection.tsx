@@ -3,11 +3,12 @@
 import React, { useEffect, useState } from "react";
 import classes from "./firstSection.module.css";
 import Image from "next/legacy/image";
+import FadeInComponent from "../FadeInComponent/FadeInComponent";
 
 type FirstSectionProps = {
-  firstChild: JSX.Element;
+  firstChild: any;
   folderName: string;
-  secondChild?: JSX.Element;
+  secondChild?: any;
   textToTheRight?: boolean;
   moreTranslate?: boolean;
 };
@@ -49,32 +50,36 @@ const FirstSection = ({
     <div className={classes.firstSectionContainer}>
       <div className={classes.firstSection}>
         <div
-          className={`${classes.text} ${textToTheRight ? classes.textRight : classes.textLeft
-            }`}
+          className={`${classes.text} ${
+            textToTheRight ? classes.textRight : classes.textLeft
+          }`}
         >
-          {firstChild}
+          <FadeInComponent>{firstChild}</FadeInComponent>
         </div>
         <div
-          className={`${classes.backgroundContainer} ${textToTheRight ? classes.backgroundImageTranslated : ""
-            }`}
+          className={`${classes.backgroundContainer} ${
+            textToTheRight ? classes.backgroundImageTranslated : ""
+          }`}
         >
           <Image
-            src={`/images/backgrounds/${folderName}/${widthInPx > 900 ? "1" : "1-R"
-              }.png`}
+            src={`/images/backgrounds/${folderName}/${
+              widthInPx > 900 ? "1" : "1-R"
+            }.png`}
             alt={""}
             layout="fill"
             objectFit="cover"
             priority
           />
           <div
-            className={`${classes.cards} ${folderName === "about_us"
-              ? moreTranslate
-                ? classes.withMoreTranslateY
-                : classes.withTranslateY
-              : ""
-              }`}
+            className={`${classes.cards} ${
+              folderName === "about_us"
+                ? moreTranslate
+                  ? classes.withMoreTranslateY
+                  : classes.withTranslateY
+                : ""
+            }`}
           >
-            {secondChild}
+            <FadeInComponent>{secondChild}</FadeInComponent>
           </div>
         </div>
       </div>
