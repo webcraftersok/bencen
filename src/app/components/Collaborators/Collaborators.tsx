@@ -5,6 +5,7 @@ import Image from "next/image";
 import classes from "./collaborators.module.css";
 import { COLLABORATORS, CUSTOMERS } from "../../utils/constants";
 import { store } from "@/app/context/context";
+import FadeInComponent from "../FadeInComponent/FadeInComponent";
 
 interface Props {
   imageName: string;
@@ -34,23 +35,25 @@ const Collaborators = (): JSX.Element => {
 
   return (
     <section className={classes.text}>
-      <h1>{COLLABORATORS[language][0]}</h1>
-      <p>
-        {COLLABORATORS[language][1]}
-        <br></br>
-        <br></br>
-        {COLLABORATORS[language][2]}
-      </p>
-      <ul className={classes.customers}>
-        {Object.keys(CUSTOMERS).map((key) => {
-          const [imageName, width, height] = CUSTOMERS[key];
-          return (
-            <li key={key}>
-              <Customer imageName={imageName} width={width} height={height} />
-            </li>
-          );
-        })}
-      </ul>
+      <FadeInComponent>
+        <h1>{COLLABORATORS[language][0]}</h1>
+        <p>
+          {COLLABORATORS[language][1]}
+          <br></br>
+          <br></br>
+          {COLLABORATORS[language][2]}
+        </p>
+        <ul className={classes.customers}>
+          {Object.keys(CUSTOMERS).map((key) => {
+            const [imageName, width, height] = CUSTOMERS[key];
+            return (
+              <li key={key}>
+                <Customer imageName={imageName} width={width} height={height} />
+              </li>
+            );
+          })}
+        </ul>
+      </FadeInComponent>
     </section>
   );
 };
