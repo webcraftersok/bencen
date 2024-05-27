@@ -7,7 +7,7 @@ const News = () => {
     <section className={classes.sectionContainer}>
       <div className={classes.maintenanceContainer}>
         <div className={classes.imageContainer}>
-          <Image src="/img/building.jpg" fill alt={"Maintenance"} />
+          <Image src="/img/building.jpg" fill alt={"Maintenance"} objectFit="cover" />
         </div>
         <Maintenance />
       </div>
