@@ -56,15 +56,17 @@ const FirstSection = ({
         >
           <FadeInComponent>{firstChild}</FadeInComponent>
         </div>
+
         <div
           className={`${classes.backgroundContainer} ${
             textToTheRight ? classes.backgroundImageTranslated : ""
           }`}
         >
           <Image
-            src={`/images/backgrounds/${folderName}/${
-              widthInPx > 900 ? "1" : "1-R"
-            }.png`}
+            // src={`/images/backgrounds/${folderName}/${
+            //   widthInPx > 900 ? "1-R" : "1-R"
+            // }.png`}
+            src={`/images/backgrounds/${folderName}/1-R.png`}
             alt={""}
             layout="fill"
             objectFit="cover"
