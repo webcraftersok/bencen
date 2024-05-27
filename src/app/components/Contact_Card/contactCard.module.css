@@ -7,13 +7,15 @@
 }
 
 .contactCard .group {
+  width: 100%;
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 16px;
   position: relative;
-  left: 2.67%;
-  top: 10.41%;
+  /* left: 2.67%; */
+  right: 2%;
+  top: 5.41%;
 }
 
 .contactCard .imageGroup {
@@ -89,12 +91,12 @@
   color: grey;
 }
 
-.sliderContainer {
+/* .sliderContainer {
   max-width: 240px;
   margin: 0 auto;
   padding-bottom: 30px;
   height: 299px;
-}
+} */
 
 .sliderContainer button::before {
   color: grey;

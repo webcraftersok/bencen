@@ -1,6 +1,8 @@
 .firstSectionContainer {
   width: 100%;
   background-color: var(--black-color);
+  /* overflow-x: hidden;
+  box-sizing: border-box; */
 }
 
 .firstSection {
@@ -105,7 +107,7 @@
 
 @media (max-width: 900px) {
   .cards {
-    margin: -100px 0 0 3px;
+    /* margin: -100px 0 0 3px; */
     justify-content: center;
     width: 100vw;
   }

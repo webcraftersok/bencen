@@ -261,6 +261,7 @@
 @media (max-width: 450px) {
     .tab {
         width: 300px;
+        margin-top: 30px;
     }
 
     .responsiveTab {
