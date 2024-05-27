@@ -255,17 +255,17 @@ export const MISION_VISION_VALUES: Object = {
   },
   spanish: {
     mision: [
-      "mission",
+      "misión",
       "misión",
       "Somos una empresa de construcción, guiada por los principios de calidad, puntualidad, alcance y rentabilidad. Adaptamos las especificaciones técnicas y los planes para satisfacer las diversas necesidades de los clientes. Nuestro equipo opera en un entorno propicio, fomentando el crecimiento y manteniendo la conciencia ambiental.",
     ],
     vision: [
-      "vision",
+      "visión",
       "visión",
       "Ser reconocidos como la empresa líder en Ingeniería, Construcción, Supervisión y Gestión de Proyectos para todos los contratos que emprendemos. Buscamos reconocimiento por el rendimiento excepcional de nuestro equipo, la dedicación a la calidad, la seguridad, la responsabilidad ambiental y la finalización oportuna de los proyectos. Nuestro propósito fundacional es brindar comodidad y diseños especializados a nuestros clientes, garantizando la más alta calidad y el cumplimiento de los estándares técnicos y de seguridad.",
     ],
     values: [
-      "values",
+      "valores",
       "valores",
       "• Integridad en el núcleo: Guiados por valores inquebrantables de disciplina, orden, respeto y honestidad. • Servicio Innovador: Abiertos a nuevas ideas, comprometidos a mejorar los servicios para satisfacer las diversas necesidades del cliente. • Productividad Eficiente: Priorizando la optimización de recursos y tiempo para un servicio eficaz, altamente valorado por los clientes. • Cumplimiento Confiable: Dedicación para cumplir compromisos, asegurando la satisfacción del cliente y negocios repetidos. • Atención Proactiva al Cliente: Más allá de las tareas, priorizamos la comunicación amistosa y abordamos todas las inquietudes del cliente de manera pronta.",
     ],
@@ -387,6 +387,12 @@ export const UNLOCKING_POSSIBILITES: Object = {
     "From civil works to groundbreaking architecture, we're your partners in realizing extraordinary projects.",
     "Dive into our tailored service offerings and redefine your vision with us.",
   ],
+  spanish: [
+    "Desbloqueando Posibilidades",
+    "Descubre nuestros servicios diversificados, diseñados para satisfacer cada necesidad.",
+    "Desde obras civiles hasta arquitectura innovadora, somos tus socios en la realización de proyectos extraordinarios.",
+    "Sumérgite en nuestras ofertas de servicios a medida, y redefiní tu visión con nosotros.",
+  ]
 };
 
 export const SERVICES_SECTION: Object = {
