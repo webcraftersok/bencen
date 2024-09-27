@@ -1,306 +1,312 @@
 /* Tab Bar - Normal State */
 .tab {
-    width: 1120px;
-    height: 672px;
-    border-radius: 16px 16px 0px 0px;
-    position: relative;
-    border-color: var(--gray-color);
-    border-style: solid;
-    border-width: 1px;
-    display: flex;
-    background-color: white;
+  width: 1120px;
+  height: 672px;
+  border-radius: 16px 16px 0px 0px;
+  position: relative;
+  border-color: var(--gray-color);
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  background-color: white;
 }
 
 .tabLeft {
-    width: 560px;
-    height: 672px;
+  width: 560px;
+  height: 672px;
 }
 
 .boxLeftClick {
-    height: 64px;
-    width: 560px;
-    background-color: var(--logo-color-dark);
-    border: 1px solid;
-    border-color: var(--gray-color);
-    border-radius: 16px 0px 0px 0px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 64px;
+  width: 560px;
+  background-color: var(--logo-color-dark);
+  border: 1px solid;
+  border-color: var(--gray-color);
+  border-radius: 16px 0px 0px 0px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .boxLeftClick:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .tabRight {
-    width: 560px;
-    height: 672px;
+  width: 560px;
+  height: 672px;
 }
 
 .boxRight {
-    height: 64px;
-    width: 560px;
-    background-color: var(--white-color);
-    border: 1px solid;
-    border-color: var(--gray-color);
-    border-radius: 0px 16px 0px 0px;
-    border-top: none;
-    border-left: none;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  height: 64px;
+  width: 560px;
+  background-color: var(--white-color);
+  border: 1px solid;
+  border-color: var(--gray-color);
+  border-radius: 0px 16px 0px 0px;
+  border-top: none;
+  border-left: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .boxRight:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .ul {
-    list-style: none;
+  list-style: none;
 }
 
 .ul li {
-    margin-left: 16px;
-    margin-right: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .ulBoxRight {
-    display: none;
+  display: none;
 }
 
 .headerLeftClick {
-    color: var(--white-color);
-    font-family: var(--h-1-font-family);
-    font-size: var(--h-1-font-size);
-    font-style: var(--h-1-font-style);
-    font-weight: var(--h-1-font-weight);
+  color: var(--white-color);
+  font-family: var(--h-1-font-family);
+  font-size: var(--h-1-font-size);
+  font-style: var(--h-1-font-style);
+  font-weight: var(--h-1-font-weight);
 }
 
 .headerRight {
-    color: var(--gray-color);
-    font-family: var(--h-1-font-family);
-    font-size: var(--h-1-font-size);
-    font-style: var(--h-1-font-style);
-    font-weight: var(--h-1-font-weight);
+  color: var(--gray-color);
+  font-family: var(--h-1-font-family);
+  font-size: var(--h-1-font-size);
+  font-style: var(--h-1-font-style);
+  font-weight: var(--h-1-font-weight);
+}
+
+.buttonContainer button {
+  width: 160px;
+  height: 48px;
+  margin-top: 1rem;
 }
 
 .button {
-    width: 160px;
-    height: 48px;
-    margin-top: 1rem;
+  width: 160px;
+  height: 48px;
+  margin-top: 1rem;
 }
 
 .buttonSelect {
-    width: 160px;
-    height: 32px;
-    margin-top: 1rem;
+  width: 160px;
+  height: 32px;
+  margin-top: 1rem;
 }
 
 .buttonSelectHide {
-    display: none;
+  display: none;
 }
 
 .cvNameContainer {
-    display: flex;
-    list-style: none;
-    gap: 4px;
+  display: flex;
+  list-style: none;
+  gap: 4px;
 }
 
 .cvName {
-    height: 32px;
-    margin-top: 1rem;
-    font-size: var(--normal-small-font-size);
-    font-style: var(--small-text-italic-font-style);
-    display: flex;
-    padding: 0 8px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color:rgb(218, 213, 213);
-    border: 2px dotted darkgray;
-    border-radius: 4px;
+  height: 32px;
+  margin-top: 1rem;
+  font-size: var(--normal-small-font-size);
+  font-style: var(--small-text-italic-font-style);
+  display: flex;
+  padding: 0 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(218, 213, 213);
+  border: 2px dotted darkgray;
+  border-radius: 4px;
 }
 
 .buttonApply {
-    width: 160px;
-    height: 48px;
-    margin-top: 2rem;
+  width: 160px;
+  height: 48px;
+  margin-top: 2rem;
 }
 
 .successMessage {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .successCv {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 /* Tab Bar - Click State */
-.boxLeft{
-    background-color: var(--white-color);
+.boxLeft {
+  background-color: var(--white-color);
 }
 
 .boxLeft:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.boxRightClick{
-    background-color: var(--logo-color-dark);
+.boxRightClick {
+  background-color: var(--logo-color-dark);
 }
 
 .boxRightClick:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .headerLeft {
-    color: var(--gray-color);
+  color: var(--gray-color);
 }
 
 .headerRightClick {
-    color: var(--white-color);
+  color: var(--white-color);
 }
 
 .ulBoxLeft {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 1440px) {
-    .tab {
-        width: 960px;
-    }
+  .tab {
+    width: 960px;
+  }
 
-    .boxLeftClick {
-        width: 480px;
-    }
-    
-    .boxRight {
-        width: 480px;
-    }
+  .boxLeftClick {
+    width: 480px;
+  }
+
+  .boxRight {
+    width: 480px;
+  }
 }
 
 @media (max-width: 1100px) {
-    .tab {
-        width: 720px;
-    }
+  .tab {
+    width: 720px;
+  }
 
-    .responsiveTab {
-        display: flex;
-    }
+  .responsiveTab {
+    display: flex;
+  }
 
-    .boxLeftClick {
-        width: 360px;
-    }
-    
-    .boxRight {
-        width: 360px;
-    }
+  .boxLeftClick {
+    width: 360px;
+  }
 
-    .headerLeftClick {
-        font-family: var(--h-2-font-family);
-        font-size: var(--h-2-font-size);
-        font-style: var(--h-2-font-style);
-        font-weight: var(--h-2-font-weight);
-    }
-    
-    .headerRight {
-        font-family: var(--h-2-font-family);
-        font-size: var(--h-2-font-size);
-        font-style: var(--h-2-font-style);
-        font-weight: var(--h-2-font-weight);
-    }
+  .boxRight {
+    width: 360px;
+  }
+
+  .headerLeftClick {
+    font-family: var(--h-2-font-family);
+    font-size: var(--h-2-font-size);
+    font-style: var(--h-2-font-style);
+    font-weight: var(--h-2-font-weight);
+  }
+
+  .headerRight {
+    font-family: var(--h-2-font-family);
+    font-size: var(--h-2-font-size);
+    font-style: var(--h-2-font-style);
+    font-weight: var(--h-2-font-weight);
+  }
 }
 
 @media (max-width: 850px) {
-    .tab {
-        width: 480px;
-    }
+  .tab {
+    width: 480px;
+  }
 
-    .boxLeftClick {
-        width: 240px;
-    }
-    
-    .boxRight {
-        width: 240px;
-    }
+  .boxLeftClick {
+    width: 240px;
+  }
+
+  .boxRight {
+    width: 240px;
+  }
 }
 
 @media (max-width: 600px) {
-    .tab {
-        width: 360px;
-    }
+  .tab {
+    width: 360px;
+  }
 
-    .boxLeftClick {
-        width: 180px;
-    }
-    
-    .boxRight {
-        width: 180px;
-    }
+  .boxLeftClick {
+    width: 180px;
+  }
 
-    .headerLeftClick {
-        font-family: var(--h-3-font-family);
-        font-size: var(--h-3-font-size);
-        font-style: var(--h-3-font-style);
-        font-weight: var(--h-3-font-weight);
-    }
-    
-    .headerRight {
-        font-family: var(--h-3-font-family);
-        font-size: var(--h-3-font-size);
-        font-style: var(--h-3-font-style);
-        font-weight: var(--h-3-font-weight);
-    }
+  .boxRight {
+    width: 180px;
+  }
+
+  .headerLeftClick {
+    font-family: var(--h-3-font-family);
+    font-size: var(--h-3-font-size);
+    font-style: var(--h-3-font-style);
+    font-weight: var(--h-3-font-weight);
+  }
+
+  .headerRight {
+    font-family: var(--h-3-font-family);
+    font-size: var(--h-3-font-size);
+    font-style: var(--h-3-font-style);
+    font-weight: var(--h-3-font-weight);
+  }
 }
 
 @media (max-width: 450px) {
-    .tab {
-        width: 300px;
-        margin-top: 30px;
-    }
+  .tab {
+    width: 300px;
+    margin-top: 30px;
+  }
 
-    .responsiveTab {
-        display: flex;
-    }
+  .responsiveTab {
+    display: flex;
+  }
 
-    .boxLeftClick {
-        width: 150px;
-    }
-    
-    .boxRight {
-        width: 150px;
-    }
+  .boxLeftClick {
+    width: 150px;
+  }
 
-    .ul li {
-        margin-left: 8px;
-        margin-right: 8px;
-    }
+  .boxRight {
+    width: 150px;
+  }
+
+  .ul li {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }
 
 @media (max-width: 360px) {
-    .tab {
-        width: 270px;
-    }
+  .tab {
+    width: 270px;
+  }
 
-    .responsiveTab {
-        display: flex;
-    }
+  .responsiveTab {
+    display: flex;
+  }
 
-    .boxLeftClick {
-        width: 135px;
-    }
-    
-    .boxRight {
-        width: 135px;
-    }
+  .boxLeftClick {
+    width: 135px;
+  }
 
-    .ul li {
-        margin-left: 6px;
-        margin-right: 6px;
-    }
+  .boxRight {
+    width: 135px;
+  }
+
+  .ul li {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
 }

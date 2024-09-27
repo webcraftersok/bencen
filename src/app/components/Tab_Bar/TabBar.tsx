@@ -140,7 +140,7 @@ const TabBar = (): JSX.Element => {
             attachments: [
               {
                 filename: `CV - ${nameR} - ${workArea}.pdf`,
-                content: Buffer.from(cv).toString("base64"),
+                content: Buffer.from(cv as string).toString("base64"),
               },
             ],
           }),
@@ -273,12 +273,14 @@ const TabBar = (): JSX.Element => {
       content: messageSubmitted ? (
         <div className={classes.successMessage}>{TAB_BAR[language][7]}</div>
       ) : (
-        <Button
-          href=""
-          classNameButton={classes.button}
-          text={TAB_BAR[language][6]}
-          onClick={handleSendClick}
-        />
+        <div className={classes.buttonContainer}>
+          <Button
+            href=""
+            classNameButton={classes.button}
+            text={TAB_BAR[language][6]}
+            onClick={handleSendClick}
+          />
+        </div>
       ),
     },
   ];
@@ -343,12 +345,15 @@ const TabBar = (): JSX.Element => {
           </ul>
         ) : (
           <div>
-            <Button
-              href=""
-              classNameButton={classes.buttonSelect}
-              text={TAB_BAR[language][12]}
-              onClick={handleSelectClick}
-            />
+            <div className={classes.buttonContainer}>
+              <Button
+                href=""
+                classNameButton={classes.buttonSelect}
+                text={TAB_BAR[language][12]}
+                onClick={handleSelectClick}
+              />
+            </div>
+
             <input
               type="file"
               ref={cvRef}
@@ -367,12 +372,14 @@ const TabBar = (): JSX.Element => {
       content: cvSubmitted ? (
         <div className={classes.successCv}>{TAB_BAR[language][14]}</div>
       ) : (
-        <Button
-          href=""
-          classNameButton={classes.buttonApply}
-          text={TAB_BAR[language][13]}
-          onClick={handleApplyClick}
-        />
+        <div className={classes.buttonContainer}>
+          <Button
+            href=""
+            classNameButton={classes.buttonApply}
+            text={TAB_BAR[language][13]}
+            onClick={handleApplyClick}
+          />
+        </div>
       ),
     },
   ];
@@ -387,15 +394,13 @@ const TabBar = (): JSX.Element => {
           <>
             <div className={classes.tabLeft}>
               <div
-                className={`${classes.boxLeftClick} ${
-                  clickL ? "" : classes.boxLeft
-                }`}
+                className={`${classes.boxLeftClick} ${clickL ? "" : classes.boxLeft
+                  }`}
                 onClick={handleClickL}
               >
                 <div
-                  className={`${classes.headerLeftClick} ${
-                    clickL ? "" : classes.headerLeft
-                  }`}
+                  className={`${classes.headerLeftClick} ${clickL ? "" : classes.headerLeft
+                    }`}
                 >
                   {TAB_BAR[language][0]}
                 </div>
@@ -413,15 +418,13 @@ const TabBar = (): JSX.Element => {
             </div>
             <div className={classes.tabRight}>
               <div
-                className={`${classes.boxRight} ${
-                  clickR ? classes.boxRightClick : ""
-                }`}
+                className={`${classes.boxRight} ${clickR ? classes.boxRightClick : ""
+                  }`}
                 onClick={handleClickR}
               >
                 <div
-                  className={`${classes.headerRight} ${
-                    clickR ? classes.headerRightClick : ""
-                  }`}
+                  className={`${classes.headerRight} ${clickR ? classes.headerRightClick : ""
+                    }`}
                 >
                   {TAB_BAR[language][8]}
                 </div>
@@ -443,29 +446,25 @@ const TabBar = (): JSX.Element => {
             <div>
               <div className={classes.responsiveTab}>
                 <div
-                  className={`${classes.boxLeftClick} ${
-                    clickL ? "" : classes.boxLeft
-                  }`}
+                  className={`${classes.boxLeftClick} ${clickL ? "" : classes.boxLeft
+                    }`}
                   onClick={handleClickL}
                 >
                   <div
-                    className={`${classes.headerLeftClick} ${
-                      clickL ? "" : classes.headerLeft
-                    }`}
+                    className={`${classes.headerLeftClick} ${clickL ? "" : classes.headerLeft
+                      }`}
                   >
                     {TAB_BAR[language][0]}
                   </div>
                 </div>
                 <div
-                  className={`${classes.boxRight} ${
-                    clickR ? classes.boxRightClick : ""
-                  }`}
+                  className={`${classes.boxRight} ${clickR ? classes.boxRightClick : ""
+                    }`}
                   onClick={handleClickR}
                 >
                   <div
-                    className={`${classes.headerRight} ${
-                      clickR ? classes.headerRightClick : ""
-                    }`}
+                    className={`${classes.headerRight} ${clickR ? classes.headerRightClick : ""
+                      }`}
                   >
                     {TAB_BAR[language][8]}
                   </div>
