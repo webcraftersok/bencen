@@ -345,7 +345,7 @@ const TabBar = (): JSX.Element => {
           </ul>
         ) : (
           <div>
-            <div className={classes.buttonContainer}>
+            <div className={classes.SelectedButtonContainer}>
               <Button
                 href=""
                 classNameButton={classes.buttonSelect}
